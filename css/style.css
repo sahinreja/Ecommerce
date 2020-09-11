@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --text:'Bree Serif', serif;
+}
+nav{
+    background-color: #000;
+}
+.navbar .navbar-brand,.nav-link{
+  
+    color: #888888;
+    font-weight: bold;
+}
+.navbar  .navbar-brand:hover, .nav-link:hover{
+    color: #fff;
+}
+.navbar button{
+    background-color: #fff;
+}
+.navbar button i{
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-top: 1.5px;
+}
+#content{
+   width: 100%;
+   height:auto ;
+   font-family: var(--text);
+}
+#banner_image {
+    width: 100%;
+    height: 90vh;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/intro-bg_1.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banner_content {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 40vw;
+    padding: 6% 0;
+   
+}
+.list_item a{
+    text-decoration:none;
+    color: #000;
+    font-family: var(--text);
+}
+.list_item a:hover{
+    text-decoration: underline;
+}
+footer {
+    padding: 10px 0;
+    background-color: #101010;
+    color:#9d9d9d;
+    bottom: 0;
+    width: 100%;
+}
+@media(max-width:768px) {
+    #banner_image {
+        width: 100%;
+        height: 60vh;
+    }
+    #banner_content {
+        width: 90vw;
+        padding: 8% 0;
+        margin-top: 5rem;
+       
+    }
+    footer{
+        text-align:left;
+    }
+}
+#login{
+    width: 100%;
+    height: 90vh;
+    font-family: var(--text);
+}
+#signup{
+    width: 100%;
+    height: auto;
+    font-family: var(--text);
+}
+#setting{
+    width: 100%;
+    height: 90vh;
+    font-family: var(--text);
+}
+#signup input::placeholder,#login input::placeholder,#setting input::placeholder{
+    font-weight: bold;
+    color: rgb(177, 172, 172);
+}
+.jumbotron{
+    background-color: #888888!important;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px #000;
+    color: #fff;
+}
+.jumbotron h1{
+    text-shadow: 0 5px 3px #000;
+    font-weight: bold;
+}
